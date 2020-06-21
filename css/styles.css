@@ -1,0 +1,269 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}*/
+
+/*.section-titles {
+  text-align: center;
+  color: darkred;
+  font-size: 6vw;
+}*/
+
+.text-white{
+  color: white;
+}
+
+.navigation-bar-top {
+  /*height: fit-content;*/
+  min-width: 400px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+.navigation-bar-logo {
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  /*object-fit: contain;*/
+}
+
+.navigation-links {
+  /*width: 50%;*/
+  width: 800px;
+  /*width: 50vw;*/
+  padding: 6px;
+  /*
+  height: fit-content;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-links a {
+  /*font-size: 1vw;*/
+  text-decoration: none;
+  border-bottom: solid transparent;
+  transition: all 225ms ease-in-out;
+  color: white;
+}
+
+.navigation-links a:hover {
+  border-bottom: 0.1vw solid White;
+  transition: all 225ms ease-in-out;
+}
+
+#phone-button {
+  border: 2px solid White;
+  border-radius: 2px;
+  background-color: Red;
+  padding: 2px;
+}
+
+.navigation-bar-bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  /*text-align: center;*/
+  /*line-height: 0;*/
+  height: 100px;
+  /*
+  font-size: 1vw;
+  */
+}
+
+.navigation-bar-bottom-content{
+  /*TODO*/
+}
+
+/*.header {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  background-color: white;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.header-content {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  color: white;
+  line-height: 0;
+  text-align: center;
+}
+
+.header-content-2 {
+  height: 5vw;
+  font-size: 1vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  line-height: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-family: 'Raleway Bold 700', sans-serif;
+  font-size: 7.7vw;
+}
+
+.header-content p {
+  font-family: 'Raleway Regular 400', sans-serif;
+  font-size: 1.8vw;
+}
+
+.order {
+  background-color: white;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orders {
+  padding: 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.order-child {
+  font-family: 'Raleway Bold 700', sans-serif;
+  font-size: 3vw;
+  color: Black;
+  text-align: center;
+}
+
+.order-image {
+  width: 10vw;
+  height: 50%;
+  object-fit: contain;
+}
+
+.menu {
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.menu-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.menu-content {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-img {
+  width: 29vw;
+  height: 29vw;
+  object-fit: fill;
+}
+
+.menu table {
+  width: 50%;
+  font-size: 2.5vw;
+  color: grey;
+  border-spacing: 0;
+}
+
+.menu table caption {
+  text-align: left;
+  font-family: 'Economica', sans-serif;
+  font-size: 4.5vw;
+  line-height: 0;
+  color: black;
+}
+
+.info {
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  line-height: 0;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.footer {
+  background-color: white;
+  position: relative;
+  height: fit-content;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 99vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-logo {
+  width: 20%;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.footer-buttons {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}*/
