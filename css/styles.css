@@ -2,10 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/*body {
+body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
-}*/
+}
 
 /*.section-titles {
   text-align: center;
@@ -19,7 +18,7 @@ html {
 
 .navigation-bar-top {
   /*height: fit-content;*/
-  min-width: 400px;
+  min-width: 900px;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px;
@@ -42,7 +41,7 @@ html {
 
 .navigation-links {
   /*width: 50%;*/
-  width: 800px;
+  /*width: 800px;*/
   /*width: 50vw;*/
   padding: 6px;
   /*
@@ -50,10 +49,14 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 500px;
+  overflow: hidden;
 }
 
 .navigation-links a {
   /*font-size: 1vw;*/
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   border-bottom: solid transparent;
   transition: all 225ms ease-in-out;
@@ -73,74 +76,56 @@ html {
 }
 
 .navigation-bar-bottom {
+  min-width: 900px;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /*text-align: center;*/
   /*line-height: 0;*/
-  height: 100px;
-  /*
-  font-size: 1vw;
-  */
+  /*font-size: 1vw;*/
 }
 
-.navigation-bar-bottom-content{
-  /*TODO*/
-}
-
-/*.header {
+.header {
+  background-image: url("C:/Users/scoo_/Documents/GitHub/sakura-ramen-website-v2/img/sakura-bg2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   position: relative;
-  width: 100vw;
-  height: fit-content;
-  background-color: white;
-}
-
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  /*width: 100vw;*/
+  height: 600px; /*must specific a height*/
+  min-width: 900px;
+  overflow: hidden;
+  background-color: grey;
 }
 
 .header-content {
-  width: 100%;
-  height: fit-content;
+  /*width: 100%;*/
   position: absolute;
-  top: 25%;
+  top: 150px;
   left: 0;
   right: 0;
   color: white;
   line-height: 0;
   text-align: center;
-}
-
-.header-content-2 {
-  height: 5vw;
-  font-size: 1vw;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  line-height: 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
 }
 
 .header-content h1 {
   font-family: 'Raleway Bold 700', sans-serif;
-  font-size: 7.7vw;
+  font-size: 4em;
 }
 
 .header-content p {
   font-family: 'Raleway Regular 400', sans-serif;
-  font-size: 1.8vw;
 }
 
-.order {
+/*.order {
   background-color: white;
   width: 100vw;
   height: fit-content;
