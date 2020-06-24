@@ -23,7 +23,7 @@ body {
   /*min-width: 900px;
   overflow: hidden;*/
   width: 600px;
-  height: fit-content;
+  /*height: fit-content;*/
   background-color: grey;
 }
 
@@ -120,7 +120,7 @@ body {
   position: relative;
   width: inherit;
   height: 425px; /*must specific a height*/
-  background-color: black;
+  background-color: Gray;
 }
 
 .header-content {
@@ -145,7 +145,7 @@ body {
 }
 
 .order {
-  background-color:whitesmoke;
+  background-color: White;
   width: inherit;
   height: 300px;
   display: flex;
@@ -179,12 +179,13 @@ body {
   background-size: cover;
   background-position: center;
   /*position: relative;*/
+  width: inherit;
   height: 800px; /*must specific a height*/
-  background-color: black;
+  background-color: Orange;
   display: flex;
   flex-direction: column;
 }
-
+/*TODO: REDUSE SPACE BETWEEN MENU-ITEMS*/
 .menu-content {
   padding: 16px;
   height: 100%;
@@ -201,14 +202,14 @@ body {
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 
 
 .menu table {
-  width: 100%;
+  width: 50%;
   color: grey;
   border-spacing: 0;
 }
@@ -221,48 +222,49 @@ body {
   color: black;
 }
 
-/*.info {
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  width: 100vw;
-  height: 100%;
-  line-height: 0;
-  font-size: 2vw;
-  text-align: center;
+  width: inherit;
+  height: 300px;
+  /*font-size: 2vw;*/
 }
 
-.map-image {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+.info-text{
+  text-align: center;
+  line-height: 0;
+}
+
+.info-img{
+  width: inherit;
+  /*height: 100%;*/
+  object-fit: cover;
 }
 
 .footer {
   background-color: white;
-  position: relative;
-  height: fit-content;
-  padding: 0.5vw;
+  /*position: relative;*/
+  height: 70px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
-  width: 99vw;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: inherit;
 }
 
-.footer-logo {
-  width: 20%;
+.footer-left{
   color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5vw;
+  /*font-size: 1.5vw;*/
 }
 
-.footer-buttons {
-  width: 20%;
+.footer-right{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}*/
+}
