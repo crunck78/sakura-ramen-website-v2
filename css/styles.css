@@ -4,6 +4,27 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+}
+
+.left-side{
+  width: 100%;
+  background-color: hotpink;
+}
+
+.right-side{
+  width: 100%;
+  background-color: hotpink;
+}
+
+.content{
+  /*min-width: 900px;
+  overflow: hidden;*/
+  width: 600px;
+  height: fit-content;
+  background-color: grey;
 }
 
 .section-titles {
@@ -18,8 +39,8 @@ body {
 
 .navigation-bar-top {
   /*height: fit-content;*/
-  min-width: 900px;
-  overflow: hidden;
+  /*min-width: 900px;
+  overflow: hidden;*/
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px;
   position: fixed;
@@ -49,8 +70,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 500px;
-  overflow: hidden;
+  /*min-width: 500px;
+  overflow: hidden;*/
 }
 
 .navigation-links a {
@@ -76,8 +97,8 @@ body {
 }
 
 .navigation-bar-bottom {
-  min-width: 900px;
-  overflow: hidden;
+  /*min-width: 900px;
+  overflow: hidden;*/
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   bottom: 0;
@@ -96,19 +117,16 @@ body {
   background-image: url("C:/Users/scoo_/Documents/GitHub/sakura-ramen-website-v2/img/sakura-bg2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
   position: relative;
-  /*width: 100vw;*/
-  height: 600px; /*must specific a height*/
-  min-width: 900px;
-  overflow: hidden;
-  background-color: grey;
+  width: inherit;
+  height: 425px; /*must specific a height*/
+  background-color: black;
 }
 
 .header-content {
   /*width: 100%;*/
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
   color: white;
@@ -118,94 +136,92 @@ body {
 
 .header-content h1 {
   font-family: 'Raleway Bold 700', sans-serif;
-  font-size: 4em;
+  font-size: 2.8em;
 }
 
 .header-content p {
   font-family: 'Raleway Regular 400', sans-serif;
+  font-size: 0.7em;
 }
 
 .order {
-  background-color: Green;
-  min-width: 900px;
-  overflow: hidden;
-  height: fit-content;
-  
-}
-
-.orders {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.order-child {
-  font-family: 'Raleway Bold 700', sans-serif;
-  font-size: 2em;
-  text-align: center;
-}
-
-/*.order-image {
-  width: 10vw;
-  height: 50%;
-  object-fit: contain;
-}
-
-/*.menu {
-  background-color: white;
-  width: 100vw;
-  height: 100%;
-  position: relative;
-}
-
-.menu-bg {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  object-fit: cover;
-}
-
-.menu-content {
-  width: 100%;
-  height: fit-content;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color:whitesmoke;
+  width: inherit;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.menu-item {
+.orders {
+  height: 100%;
+  background-color: white;
+  padding: 16px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-.menu-img {
-  width: 29vw;
-  height: 29vw;
+.order-child {
+  font-family: 'Raleway Bold 700', sans-serif;
+  text-align: center;
+}
+
+.order-image {
+  width: 50px;
+  height: 50px;
   object-fit: fill;
 }
 
+.menu {
+  background-image: url("C:/Users/scoo_/Documents/GitHub/sakura-ramen-website-v2/img/menu-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*position: relative;*/
+  height: 800px; /*must specific a height*/
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-content {
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .menu table {
-  width: 50%;
-  font-size: 2.5vw;
+  width: 100%;
   color: grey;
   border-spacing: 0;
 }
 
 .menu table caption {
+  font-size: 1.8em;
   text-align: left;
   font-family: 'Economica', sans-serif;
-  font-size: 4.5vw;
   line-height: 0;
   color: black;
 }
 
-.info {
+/*.info {
   background-color: white;
   width: 100vw;
   height: 100%;
