@@ -19,14 +19,14 @@ body {
 }
 
 .content{
-  width: 600px;
+  width: 506px;
 }
 
 .section-titles {
   text-align: center;
   color: darkred;
   font-family: 'Raleway', sans-serif;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .text-white{
@@ -34,7 +34,7 @@ body {
 }
 
 .navigation-bar{
-  width: 600px;
+  width: 506px;
   background-color: rgba(0, 0, 0, 0.5); 
   position: fixed;
   z-index: 1;
@@ -42,6 +42,9 @@ body {
 }
 
 .navigation-bar-top {
+  width: 446px;
+  padding-left: 30px;
+  padding-right: 30px;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -52,7 +55,7 @@ body {
   width: 30px;
   height: 30px;
   object-fit: contain;
-  padding: 6px;
+  padding: 10px;
 }
 
 .navigation-links {
@@ -70,18 +73,22 @@ body {
   transition: all 225ms ease-in-out;
   color: white;
   font-family: 'Raleway', sans-serif;
+  font-size: 0.5em;
 }
 
 .navigation-links a:hover {
-  border-bottom: 0.1vw solid White;
+  border-bottom: 2px solid White;
   transition: all 225ms ease-in-out;
 }
 
 #phone-button {
-  border: 2px solid White;
+  width: 80px;
+  height: 10px;
+  border: 1px solid White;
   border-radius: 2px;
-  background-color: Red;
+  background-color: rgb(140, 0, 0);
   padding: 2px;
+  text-align: center;
 }
 
 .navigation-bar-bottom {
@@ -105,56 +112,72 @@ body {
   background-position: center;
   position: relative;
   width: inherit;
-  height: 425px; /*must specific a height*/
+  height: 360px; /*must specific a height*/
   background-color: Gray;
 }
 
 .header-content {
   /*width: 100%;*/
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 0;
   right: 0;
   color: white;
   line-height: 0;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header-content h1 {
-  font-size: 2.8em;
+  font-size: 2.5em;
 }
 
 .header-content p {
-  font-size: 0.7em;
+  font-size: 0.55em;
 }
 
 .order {
-  width: inherit;
-  height: 280px;
+  /*width: inherit;*/
+  height: 205px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 20px;
 }
 
 .orders {
-  height: 100%;
+  /*width: 100%;*/
+  /*height: 100%;*/
   background-color: white;
-  padding: 16px;
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
+  align-items: center;
+   margin: 10px;
 }
 
 .order-child {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
+  width: 90px;
+  /*height: 100%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .order-image {
-  width: 50px;
-  height: 50px;
+  padding: 5px;
+  width: 45px;
+  height: 35px;
   object-fit: fill;
+}
+
+.order-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+  margin-block-start: 0;
 }
 
 .menu {
@@ -164,44 +187,61 @@ body {
   background-position: center;
   /*position: relative;*/
   width: inherit;
-  height: 750px; /*must specific a height*/
+  height: 630px; /*must specific a height*/
   background-color: Orange;
   display: flex;
   flex-direction: column;
 }
 /*TODO: REDUSE SPACE BETWEEN MENU-ITEMS*/
 .menu-content {
-  /*height: 100%;*/
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.menu-img {
-  width: 160px;
-  height: 160px;
-  object-fit: contain;
+  padding: 5px;
 }
 
 .menu-item {
+  padding-bottom: 40px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.menu-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
 }
 
 .menu table {
-  width: 40%;
-  color: grey;
+  width: 200px;
+  /*height: 100px;*/
   border-spacing: 0;
 }
 
+.menu table tbody{
+  color: grey;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.menu table tbody tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
 .menu table caption {
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: left;
   font-family: 'Economica', sans-serif;
   line-height: 0;
-  /*color: black;*/
+  color: black;
 }
 
 .info {
@@ -209,7 +249,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: inherit;
-  height: 360px;
+  height: 300px;
 }
 
 .info-text{
@@ -224,7 +264,7 @@ body {
   font-family: 'Economica', sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .text-margin{
@@ -239,6 +279,7 @@ body {
 }
 
 .footer {
+  width: 446px;
   background-color: White;
   position: relative;
   height: 70px;
@@ -246,7 +287,8 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  width: inherit;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .footer-left{
@@ -254,7 +296,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*font-size: 1.5vw;*/
+}
+
+.footer-left p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
 }
 
 .footer-right{
