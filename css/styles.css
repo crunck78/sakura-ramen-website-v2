@@ -57,7 +57,7 @@ body {
   height: 30px;
   object-fit: contain;
   padding: 10px;
-  animation: 1s rotate infinite linear;
+  /*animation: 1s rotate infinite linear;*/
 }
 
 @keyframes rotate {
@@ -118,7 +118,7 @@ body {
 }
 
 .header {
-  background-image: url("C:/Users/scoo_/Documents/GitHub/sakura-ramen-website-v2/img/sakura-bg2.png");
+  background-image: url("../img/sakura-bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -194,7 +194,7 @@ body {
 }
 
 .menu {
-  background-image: url("C:/Users/scoo_/Documents/GitHub/sakura-ramen-website-v2/img/menu-bg.png");
+  background-image: url("../img/menu-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
